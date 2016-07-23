@@ -5,9 +5,6 @@ class CreateLocations < ActiveRecord::Migration
       t.string :location_longitude
       t.string :description
 
-      t.integer :max_slots
-      t.string :address
-
       t.timestamps null: false
     end
   end
