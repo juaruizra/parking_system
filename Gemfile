@@ -5,6 +5,8 @@ ruby '2.3.1'
 gem 'rails', '4.2.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+#VALIDACION TIME-DATA
+gem 'validates_timeliness', '~> 4.0'
 #gema de bootstrap
 gem 'bootstrap-sass'
 #gema para loggin
