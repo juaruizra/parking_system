@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'locations/index'
+
   root 'users#show'
   devise_for :users
     resources :users do
