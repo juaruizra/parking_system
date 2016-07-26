@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   validates :password, length: { in: 6..20 }
 #validates_date :birthdate, :on_or_before => lambda { Date.current }
 
-  before_save do
+  before_save do #callback
       self.is_admin = false
   end
 
