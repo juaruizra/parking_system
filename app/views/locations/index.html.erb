@@ -1,2 +1,13 @@
-<h1>Locations#index</h1>
-<p>Find me in app/views/locations/index.html.erb</p>
+<h1>Locations#INDEX</h1>
+
+<% @locations.each do |aux| %>
+  <div>
+    Address:  <%= aux.address %>
+    Latitude: <%= aux.latitude %>
+    Longitude:<%= aux.longitude %>
+  </div>
+<%end%>
+
+<div class="col-md-2 button-opt">
+  <%= link_to "Add Locations",    new_location_path,      class: 'btn btn-success'%>
+</div>

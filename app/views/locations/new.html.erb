@@ -1,0 +1,19 @@
+<h1>Locations#NEW</h1>
+<div>
+
+
+<% form_for (@locations_new) do |f| %>
+  <p>
+
+    address: <%= f.text_field :address %></p>
+    Latitude:<%= f.text_field :latitude %>
+    Longitude:<%= f.text_field :longitude %>
+    <%= f.submit "Load" %>
+<% end %>
+</div>
+<div>
+  <!-- <div>
+    <%= link_to "Back",    location_path,      class: 'btn btn-success'%>
+  </div> -->
+
+</div>
