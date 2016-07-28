@@ -11,7 +11,7 @@ class VehiclesController < ApplicationController
   end
 
   def create #recibe el post del formulario
-    @vehicle =Vehicle.new(vehicle_params)
+    @vehicle = Vehicle.new(vehicle_params)
     @vehicle.user_id= current_user.id
 
     #guardar en la base de datos
