@@ -3,8 +3,11 @@
 <%= form_for @location, url: {action: 'create'} do |f| %>
   <div>
     address: <%= f.text_field :address  %> </br>
-    Latitude:<%= f.text_field :latitude %> </br>
-    Longitude:<%= f.text_field :longitude %> </br>
+    Name:<%= f.text_field :name %> </br>
+    description:<%= f.text_field :description %> </br>
     <%= f.submit "Load" %>
   </div>
 <% end %>
+<div class="col-md-2 button-opt">
+  <%= link_to "Cancel",    {:action=>"index", :controller=>"locations"},     class: 'btn btn-danger'%>
+</div>

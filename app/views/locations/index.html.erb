@@ -1,5 +1,8 @@
 <h1>Locations#INDEX</h1>
-
+<div class="col-md-2">
+  <%= render partial: "layouts/user_menu" %>
+</div>
+</br></br></br></br>
 <% @locations.each do |aux| %>
   <div>
     Address:  <%= aux.address %>
@@ -10,5 +13,4 @@
 
 <div class="col-md-2 button-opt">
   <%= link_to "Add Locations",    new_location_path,     class: 'btn btn-success'%>
-  
 </div>
