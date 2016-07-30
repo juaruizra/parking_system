@@ -16,6 +16,7 @@ class VehiclesController < ApplicationController
 
     #guardar en la base de datos
       if @vehicle.save #si se guarda enla base de datos...
+        VehicleMailer.new_vehicle_email(current_user).deliver_now
         flash[:success] = "Vehicle registered Successfully"
         redirect_to user_vehicles_path(current_user)
     else
